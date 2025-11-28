@@ -1,0 +1,24 @@
+name: ocr_env
+channels:
+  - pytorch
+  - defaults
+  - conda-forge
+dependencies:
+  # --- Dependencias Principales de Conda ---
+  - python=3.10
+  - pytorch
+  - torchvision
+
+  # --- Dependencias a instalar con Pip ---
+  - pip:
+    - opencv-python
+    - easyocr
+    - tensorflow
+    - fastapi
+    - "uvicorn[standard]"
+    - python-multipart
+    - pandas
+    - imutils
+    - tqdm
+    - matplotlib
+    - gTTS
